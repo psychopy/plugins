@@ -1,0 +1,83 @@
+[
+  {
+    "source": "curated",
+    "pipname": "psychopy-buttonbox",
+    "name": "Button Boxes",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://opensciencetools.org/img/Branding/OpenScienceTools_logotype600.png"
+    },
+    "icon": "https://opensciencetools.org/img/Branding/OpenScienceTools_logotype600.png",
+    "description": "Components for working with button boxes such as those by Cedrus or ioLabs.",
+    "homepage": "",
+	"docs": "",
+	"repo": "",
+    "keywords": [
+      "hardware",
+      "buttonbox",
+      "input"
+    ]
+  },
+  {
+    "source": "curated",
+    "pipname": "psychopy-transcription",
+    "name": "Microphone Transcription",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://opensciencetools.org/img/Branding/OpenScienceTools_logotype600.png"
+    },
+    "icon": "https://opensciencetools.org/img/Branding/OpenScienceTools_logotype600.png",
+    "description": "Packages necessary to provide a text transcription of local Microphone recordings either through a free Python package or through Google's paid transcription service.",
+    "homepage": "",
+	"docs": "",
+	"repo": "",
+    "keywords": [
+      "microphone",
+      "transcription",
+      "audio"
+    ]
+  },
+  {
+    "source": "curated",
+    "pipname": "psychopy-legacy",
+    "name": "PsychoPy Legacy",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://opensciencetools.org/img/Branding/OpenScienceTools_logotype600.png"
+    },
+    "icon": "https://opensciencetools.org/img/Branding/OpenScienceTools_logotype600.png",
+    "description": "Contains depricated components which are no longer needed or in active development allowing you to work with old experiments using these components.",
+    "homepage": "",
+	"docs": "",
+	"repo": "",
+    "keywords": [
+      "legacy"
+    ]
+  },
+  {
+    "source": "community",
+    "pipname": "psychopy-emotiv",
+    "name": "Emotiv EEG",
+    "author": {
+      "name": "Emotiv",
+      "email": "hello@emotiv.com",
+      "github": "Emotiv",
+      "avatar": "https://www.insightplatforms.com/wp-content/uploads/2022/04/Emotiv-Logo-Square-Insight-Platforms.png"
+    },
+    "icon": "https://www.insightplatforms.com/wp-content/uploads/2022/04/Emotiv-Logo-Square-Insight-Platforms.png",
+    "description": "Components for working with Emotiv EEG systems.",
+    "homepage": "",
+	"docs": "",
+	"repo": "",
+    "keywords": [
+      "emotiv",
+      "eeg"
+    ]
+  }
+]
