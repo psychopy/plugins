@@ -38,7 +38,7 @@ clean:
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
-	cp ../plugins.json $(BUILDDIR)/
+	cp ../*.json $(BUILDDIR)/html/
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
