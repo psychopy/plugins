@@ -1,19 +1,57 @@
 [
   {
-    "source": "curated",
-    "pipname": "psychopy-buttonbox",
-    "name": "Button Boxes",
+    "pipname": "psychopy-crs",
+    "name": "Cambridge Research Systems devices",
     "author": {
       "name": "Open Science Tools",
       "email": "dev@opensciencetools.org",
       "github": "psychopy",
-      "avatar": "https://opensciencetools.org/img/Branding/OpenScienceTools_logotype600.png"
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
     },
-    "icon": "https://opensciencetools.org/img/Branding/OpenScienceTools_logotype600.png",
-    "description": "Components for working with button boxes such as those by Cedrus or ioLabs.",
-    "homepage": "",
-	"docs": "",
-	"repo": "",
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-crs.png",
+    "description": "Support for various hardware devices by Cambridge Research Systems Ltd.",
+    "homepage": "https://psychopy.github.io/psychopy-crs/",
+    "docs": "https://psychopy.github.io/psychopy-crs/",
+    "repo": "https://github.com/psychopy/psychopy-crs",
+    "keywords": [
+      "crs",
+      "equipment"
+    ]
+  },
+  {
+    "pipname": "psychopy-cedrus",
+    "name": "Cedrus Support",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-cedrus.png",
+    "description": "Support for various hardware devices by the Cedrus Corporation.",
+    "homepage": "https://psychopy.github.io/psychopy-cedrus/",
+    "docs": "https://psychopy.github.io/psychopy-cedrus/",
+    "repo": "https://github.com/psychopy/psychopy-cedrus",
+    "keywords": [
+      "equipment",
+      "hardware",
+      "buttonbox"
+    ]
+  },
+  {
+    "pipname": "git+https://github.com/wichmann-lab/psychopy-pixx.git",
+    "name": "PsychoPy VPixx",
+    "author": {
+      "name": "Wichmann lab",
+      "email": "felix.wichmann@uni-tuebingen.de",
+      "github": "wichmann-lab",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/Wichmann.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-vpixx.png",
+    "description": "PsychoPy extensions for using VPixx devices",
+    "homepage": "https://github.com/wichmann-lab/psychopy-pixx",
+    "docs": "",
+    "repo": "https://github.com/wichmann-lab/psychopy-pixx",
     "keywords": [
       "hardware",
       "buttonbox",
@@ -21,60 +59,182 @@
     ]
   },
   {
-    "source": "curated",
-    "pipname": "psychopy-transcription",
-    "name": "Microphone Transcription",
+    "pipname": "psychopy-bbtk",
+    "name": "Black Box Toolkit Support",
     "author": {
       "name": "Open Science Tools",
       "email": "dev@opensciencetools.org",
       "github": "psychopy",
-      "avatar": "https://opensciencetools.org/img/Branding/OpenScienceTools_logotype600.png"
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
     },
-    "icon": "https://opensciencetools.org/img/Branding/OpenScienceTools_logotype600.png",
-    "description": "Packages necessary to provide a text transcription of local Microphone recordings either through a free Python package or through Google's paid transcription service.",
-    "homepage": "",
-	"docs": "",
-	"repo": "",
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-bbtk.png",
+    "description": "Extension package for adding support for devices by Black Box ToolKit Ltd. to PsychoPy.",
+    "homepage": "https://psychopy.github.io/psychopy-bbtk/",
+    "docs": "https://psychopy.github.io/psychopy-bbtk/",
+    "repo": "https://github.com/psychopy/psychopy-bbtk",
     "keywords": [
-      "microphone",
-      "transcription",
-      "audio"
+      "equipment",
+      "hardware",
+      "buttonbox"
     ]
   },
   {
-    "source": "curated",
-    "pipname": "psychopy-legacy",
-    "name": "PsychoPy Legacy",
+    "pipname": "psychopy-labhackers",
+    "name": "LabHackers Research Equipment Support",
     "author": {
       "name": "Open Science Tools",
       "email": "dev@opensciencetools.org",
       "github": "psychopy",
-      "avatar": "https://opensciencetools.org/img/Branding/OpenScienceTools_logotype600.png"
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
     },
-    "icon": "https://opensciencetools.org/img/Branding/OpenScienceTools_logotype600.png",
-    "description": "Contains depricated components which are no longer needed or in active development allowing you to work with old experiments using these components.",
-    "homepage": "",
-	"docs": "",
-	"repo": "",
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-labhackers.png",
+    "description": "Extension package for adding support for devices by LabHackers Research Equipment to PsychoPy.",
+    "homepage": "https://psychopy.github.io/psychopy-labhackers/",
+    "docs": "https://psychopy.github.io/psychopy-labhackers/",
+    "repo": "https://github.com/psychopy/psychopy-labhackers",
     "keywords": [
-      "legacy"
+      "equipment",
+      "hardware",
+      "buttonbox"
     ]
   },
   {
-    "source": "community",
+    "pipname": "psychopy-iolabs",
+    "name": "ioLabs Systems Button Box Support",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-iolabs.png",
+    "description": "Extension package for adding support for ioLabs Systems button boxes to PsychoPy.",
+    "homepage": "https://psychopy.github.io/psychopy-iolabs/",
+    "docs": "https://psychopy.github.io/psychopy-iolabs/",
+    "repo": "https://github.com/psychopy/psychopy-iolabs",
+    "keywords": [
+      "equipment",
+      "hardware",
+      "buttonbox"
+    ]
+  },
+  {
+    "pipname": "psychopy-brainproducts",
+    "name": "Brain Products GmbH Device Support",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-brainproducts.png",
+    "description": "Extension package for PsychoPy which adds support for Brain Products GmbH devices.",
+    "homepage": "https://psychopy.github.io/psychopy-brainproducts/",
+    "docs": "https://psychopy.github.io/psychopy-brainproducts/",
+    "repo": "https://github.com/psychopy/psychopy-brainproducts",
+    "keywords": [
+      "equipment",
+      "hardware",
+      "buttonbox",
+      "eeg"
+    ]
+  },
+  {
+    "pipname": "psychopy-gammasci",
+    "name": "Gamma Scientific Inc. Support",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-gammasci.png",
+    "description": "Extension package for PsychoPy which adds support for Gamma Scientific Inc. devices.",
+    "homepage": "https://psychopy.github.io/psychopy-gammasci/",
+    "docs": "https://psychopy.github.io/psychopy-gammasci/",
+    "repo": "https://github.com/psychopy/psychopy-gammasci",
+    "keywords": [
+      "equipment",
+      "hardware",
+      "optometer"
+    ]
+  },
+  {
+    "pipname": "psychopy-photoresearch",
+    "name": "Photo Research Inc. Support",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-photoresearch.png",
+    "description": "Extension package for PsychoPy which adds support for Photo Research Inc. devices.",
+    "homepage": "https://psychopy.github.io/psychopy-photoresearch/",
+    "docs": "https://psychopy.github.io/psychopy-photoresearch/",
+    "repo": "https://github.com/psychopy/psychopy-photoresearch",
+    "keywords": [
+      "equipment",
+      "hardware",
+      "photometer",
+      "colorimeter"
+    ]
+  },
+  {
+    "pipname": "psychopy-labjack",
+    "name": "LabJack Support",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-labjack.png",
+    "description": "Extension package for adding support for LabJack devices to PsychoPy.",
+    "homepage": "https://psychopy.github.io/psychopy-labjack/",
+    "docs": "https://psychopy.github.io/psychopy-labjack/",
+    "repo": "https://github.com/psychopy/psychopy-labjack",
+    "keywords": [
+      "equipment",
+      "hardware"
+    ]
+  },
+  {
+    "pipname": "psychopy-minolta",
+    "name": "Konica Minolta Support",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-minolta.png",
+    "description": "Extension package for adding support for Konica Minolta light-measuring devices to PsychoPy.",
+    "homepage": "https://psychopy.github.io/psychopy-minolta/",
+    "docs": "https://psychopy.github.io/psychopy-minolta/",
+    "repo": "https://github.com/psychopy/psychopy-minolta",
+    "keywords": [
+      "equipment",
+      "hardware",
+      "minolta",
+      "photometer",
+      "colorimeter"
+    ]
+  },
+  {
     "pipname": "psychopy-emotiv",
     "name": "Emotiv EEG",
     "author": {
       "name": "Emotiv",
       "email": "hello@emotiv.com",
       "github": "Emotiv",
-      "avatar": "https://www.insightplatforms.com/wp-content/uploads/2022/04/Emotiv-Logo-Square-Insight-Platforms.png"
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/emotiv.png"
     },
-    "icon": "https://www.insightplatforms.com/wp-content/uploads/2022/04/Emotiv-Logo-Square-Insight-Platforms.png",
-    "description": "Components for working with Emotiv EEG systems.",
-    "homepage": "",
-	"docs": "",
-	"repo": "",
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-emotiv.png",
+    "description": "Support for various hardware devices by Emotiv Inc.",
+    "homepage": "https://psychopy.github.io/psychopy-emotiv/",
+    "docs": "https://psychopy.github.io/psychopy-emotiv/",
+    "repo": "https://github.com/psychopy/psychopy-emotiv",
     "keywords": [
       "emotiv",
       "eeg"
