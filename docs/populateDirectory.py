@@ -9,9 +9,10 @@ code = (
     "=====================================\n"
     "\n"
     "The following plugins are currently available:\n"
+    "\n"
 )
 for plugin in pluginsList:
-    line = "* **`%(name)s <%(homepage)s>`_** ``%(pipname)s``: %(description)s\n" % plugin
+    line = "- `%(name)s <%(homepage)s>`_ [``%(pipname)s``]: %(description)s\n" % plugin
     code += line
 
 with (Path(__file__).parent / "directory.rst").open("w", encoding="UTF-8") as f:
