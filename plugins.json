@@ -39,7 +39,7 @@
     ]
   },
   {
-    "pipname": "git+https://github.com/wichmann-lab/psychopy-pixx.git",
+    "pipname": "psychopy-pixx",
     "name": "PsychoPy VPixx",
     "author": {
       "name": "Wichmann lab",
