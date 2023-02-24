@@ -48,7 +48,7 @@
       "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/Wichmann.png"
     },
     "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-vpixx.png",
-    "description": "PsychoPy extensions for using VPixx devices",
+    "description": "PsychoPy extensions for high-luminance resolution using VPixx Technology Inc devices.",
     "homepage": "https://github.com/wichmann-lab/psychopy-pixx",
     "docs": "",
     "repo": "https://github.com/wichmann-lab/psychopy-pixx",
