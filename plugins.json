@@ -222,6 +222,47 @@
     ]
   },
   {
+    "pipname": "psychopy-qmix",
+    "name": "Qmix Syringe Pump Support",
+    "author": {
+      "name": "Richard Höchenberger",
+      "email": "richard.hoechenberger@gmail.com",
+      "github": "https://github.com/hoechenberger/",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-qmix.png",
+    "description": "Simple interface to the Cetoni neMESYS syringe pump system.",
+    "homepage": "https://psychopy.github.io/psychopy-qmix/",
+    "docs": "https://psychopy.github.io/psychopy-qmix/",
+    "repo": "https://github.com/psychopy/psychopy-qmix/",
+    "keywords": [
+      "equipment",
+      "hardware",
+      "pump",
+      "syringe"
+    ]
+  },
+  {
+    "pipname": "psychopy-labeotech",
+    "name": "LabeoTech device support",
+    "author": {
+      "name": "Enzo Delamarre",
+      "email": "",
+      "github": "https://github.com/Enzo-Del/",
+      "avatar": ""
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-labeotech.png",
+    "description": "Support for LabeoTech devices such as pump systems for mice.",
+    "homepage": "https://psychopy.github.io/psychopy-labeotech/",
+    "docs": "https://psychopy.github.io/psychopy-labeotech/",
+    "repo": "https://github.com/psychopy/psychopy-labeotech/",
+    "keywords": [
+      "equipment",
+      "hardware",
+      "pump"
+    ]
+  },
+  {
     "pipname": "psychopy-emotiv",
     "name": "Emotiv EEG",
     "author": {
