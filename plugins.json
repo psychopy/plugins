@@ -263,6 +263,46 @@
     ]
   },
   {
+    "pipname": "psychopy-sounddevice",
+    "name": "Audio playback support using the SoundDevice library",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png",
+    "description": "Audio playback backend using the SoundDevice library.",
+    "homepage": "https://psychopy.github.io/psychopy-sounddevice/",
+    "docs": "https://psychopy.github.io/psychopy-sounddevice/",
+    "repo": "https://github.com/psychopy/psychopy-sounddevice/",
+    "keywords": [
+      "equipment",
+      "hardware",
+      "sound"
+    ]
+  },
+  {
+    "pipname": "psychopy-pyo",
+    "name": "Audio playback support using the Pyo library",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png",
+    "description": "Audio playback backend using the Pyo library.",
+    "homepage": "https://psychopy.github.io/psychopy-pyo/",
+    "docs": "https://psychopy.github.io/psychopy-pyo/",
+    "repo": "https://github.com/psychopy/psychopy-pyo/",
+    "keywords": [
+      "equipment",
+      "hardware",
+      "sound"
+    ]
+  },
+  {
     "pipname": "psychopy-emotiv",
     "name": "Emotiv EEG",
     "author": {
