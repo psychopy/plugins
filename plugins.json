@@ -271,7 +271,7 @@
       "github": "psychopy",
       "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
     },
-    "icon": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png",
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-sounddevice.png",
     "description": "Audio playback backend using the SoundDevice library.",
     "homepage": "https://psychopy.github.io/psychopy-sounddevice/",
     "docs": "https://psychopy.github.io/psychopy-sounddevice/",
@@ -291,7 +291,7 @@
       "github": "psychopy",
       "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
     },
-    "icon": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png",
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-pyo.png",
     "description": "Audio playback backend using the Pyo library.",
     "homepage": "https://psychopy.github.io/psychopy-pyo/",
     "docs": "https://psychopy.github.io/psychopy-pyo/",
