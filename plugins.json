@@ -320,5 +320,26 @@
       "emotiv",
       "eeg"
     ]
+  },
+  {
+    "pipname": "psychopy-visionscience",
+    "name": "Advanced Vision Science",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https//plugins.psychopy.org/_static/plugin-icons/psychopy-visionscience.png",
+    "description": "Adds advanced vision science stimuli such; noise patches and second-order gratings with envelope.",
+    "homepage": "https://psychopy.github.io/psychopy-visionscience/",
+    "docs": "https://psychopy.github.io/psychopy-visionscience/",
+    "repo": "https://github.com/psychopy/psychopy-visionscience",
+    "keywords": [
+      "vision",
+      "science",
+      "grating",
+      "noise"
+    ]
   }
 ] 
