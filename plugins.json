@@ -341,5 +341,26 @@
       "grating",
       "noise"
     ]
+  },
+  {
+    "pipname": "psychopy-eyetracker-tobii",
+    "name": "Tobii Eyetracker Support",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-tobii.png",
+    "description": "Support for Tobii eyetrackers using ioHub",
+    "homepage": "https://github.com/psychopy/psychopy-eyetracker-tobii",
+    "docs": "https://github.com/psychopy/psychopy-eyetracker-tobii",
+    "repo": "https://github.com/psychopy/psychopy-eyetracker-tobii",
+    "keywords": [
+      "tobii",
+      "hardware",
+      "eyetracker",
+      "iohub"
+    ]
   }
 ] 
