@@ -16,7 +16,8 @@
     "keywords": [
       "crs",
       "equipment"
-    ]
+    ],
+    "versions": ["2023.1.0", null]
   },
   {
     "pipname": "psychopy-cedrus",
@@ -36,7 +37,8 @@
       "equipment",
       "hardware",
       "buttonbox"
-    ]
+    ],
+    "versions": ["2023.1.0", null]
   },
   {
     "pipname": "psychopy-pixx",
@@ -56,7 +58,8 @@
       "hardware",
       "buttonbox",
       "input"
-    ]
+    ],
+    "versions": ["2023.1.0", null]
   },
   {
     "pipname": "psychopy-bbtk",
@@ -76,7 +79,8 @@
       "equipment",
       "hardware",
       "buttonbox"
-    ]
+    ],
+    "versions": ["2023.1.0", null]
   },
   {
     "pipname": "psychopy-labhackers",
@@ -96,7 +100,8 @@
       "equipment",
       "hardware",
       "buttonbox"
-    ]
+    ],
+    "versions": ["2023.1.0", null]
   },
   {
     "pipname": "psychopy-iolabs",
@@ -116,7 +121,8 @@
       "equipment",
       "hardware",
       "buttonbox"
-    ]
+    ],
+    "versions": ["2023.1.0", null]
   },
   {
     "pipname": "psychopy-brainproducts",
@@ -137,7 +143,8 @@
       "hardware",
       "buttonbox",
       "eeg"
-    ]
+    ],
+    "versions": ["2023.1.0", null]
   },
   {
     "pipname": "psychopy-gammasci",
@@ -157,7 +164,8 @@
       "equipment",
       "hardware",
       "optometer"
-    ]
+    ],
+    "versions": ["2023.1.0", null]
   },
   {
     "pipname": "psychopy-photoresearch",
@@ -178,7 +186,8 @@
       "hardware",
       "photometer",
       "colorimeter"
-    ]
+    ],
+    "versions": ["2023.1.0", null]
   },
   {
     "pipname": "psychopy-labjack",
@@ -197,7 +206,8 @@
     "keywords": [
       "equipment",
       "hardware"
-    ]
+    ],
+    "versions": ["2023.1.0", null]
   },
   {
     "pipname": "psychopy-minolta",
@@ -219,7 +229,8 @@
       "minolta",
       "photometer",
       "colorimeter"
-    ]
+    ],
+    "versions": ["2023.1.0", null]
   },
   {
     "pipname": "psychopy-qmix",
@@ -240,7 +251,8 @@
       "hardware",
       "pump",
       "syringe"
-    ]
+    ],
+    "versions": ["2023.1.0", null]
   },
   {
     "pipname": "psychopy-labeotech",
@@ -260,7 +272,8 @@
       "equipment",
       "hardware",
       "pump"
-    ]
+    ],
+    "versions": ["2023.1.0", null]
   },
   {
     "pipname": "psychopy-sounddevice",
@@ -280,7 +293,8 @@
       "equipment",
       "hardware",
       "sound"
-    ]
+    ],
+    "versions": ["2023.1.0", null]
   },
   {
     "pipname": "psychopy-pyo",
@@ -300,7 +314,8 @@
       "equipment",
       "hardware",
       "sound"
-    ]
+    ],
+    "versions": ["2023.1.0", null]
   },
   {
     "pipname": "psychopy-emotiv",
@@ -319,7 +334,8 @@
     "keywords": [
       "emotiv",
       "eeg"
-    ]
+    ],
+    "versions": ["2023.1.0", null]
   },
   {
     "pipname": "psychopy-visionscience",
@@ -340,7 +356,8 @@
       "science",
       "grating",
       "noise"
-    ]
+    ],
+    "versions": ["2023.1.0", null]
   },
   {
     "pipname": "psychopy-eyetracker-tobii",
@@ -361,6 +378,7 @@
       "hardware",
       "eyetracker",
       "iohub"
-    ]
+    ],
+    "versions": ["2023.2.0", null]
   }
 ] 
