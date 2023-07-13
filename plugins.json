@@ -385,7 +385,7 @@
   },
   {
     "pipname": "psychopy-whisper",
-    "name": "Whisper audio transcription support",
+    "name": "Whisper Speech-to-Text Transcription",
     "author": {
       "name": "Open Science Tools",
       "email": "dev@opensciencetools.org",
