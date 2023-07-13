@@ -382,5 +382,25 @@
       "eyetracker",
       "iohub"
     ]
+  },
+  {
+    "pipname": "psychopy-whisper",
+    "name": "Whisper audio transcription support",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-transcribe-whispr.png",
+    "description": "Support for transcribing speech in audio using OpenAI Whisper.",
+    "homepage": "https://github.com/psychopy/psychopy-whisper",
+    "docs": "https://github.com/psychopy/psychopy-whisper",
+    "repo": "https://github.com/psychopy/psychopy-whisper",
+    "keywords": [
+      "sound",
+      "transcription",
+      "speech"
+    ]
   }
 ] 
