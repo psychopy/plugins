@@ -384,6 +384,26 @@
     ]
   },
   {
+    "pipname": "psychopy-eyetracker-gazepoint",
+    "name": "Gazepoint Eyetracker Support",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-eyetracker-gazepoint.png",
+    "description": "Support for Gazepoint eyetrackers using ioHub.",
+    "homepage": "https://github.com/psychopy/psychopy-eyetracker-gazepoint",
+    "docs": "https://github.com/psychopy/psychopy-eyetracker-gazepoint",
+    "repo": "https://github.com/psychopy/psychopy-eyetracker-gazepoint",
+    "keywords": [
+      "hardware",
+      "eyetracker",
+      "iohub"
+    ]
+  },
+  {
     "pipname": "psychopy-whisper",
     "name": "Whisper Speech-to-Text Transcription",
     "author": {
