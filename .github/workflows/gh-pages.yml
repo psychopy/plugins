@@ -3,6 +3,7 @@ on:
   push:
     branches:
     - main
+    - remote-themes-test
 jobs:
   build:
     runs-on: ubuntu-latest
