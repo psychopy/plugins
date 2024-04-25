@@ -422,5 +422,25 @@
       "transcription",
       "speech"
     ]
+  },
+  {
+    "pipname": "psychopy-legacy",
+    "name": "PsychoPy Legacy",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-legacy.png",
+    "description": "Legacy stimuli and Components for PsychoPy",
+    "homepage": "https://psychopy.github.io/psychopy-legacy",
+    "docs": "https://psychopy.github.io/psychopy-legacy",
+    "repo": "https://github.com/psychopy/psychopy-legacy",
+    "keywords": [
+      "legacy",
+      "visual",
+      "deprecated"
+    ]
   }
 ] 
