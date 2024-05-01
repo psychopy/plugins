@@ -424,6 +424,26 @@
     ]
   },
   {
+    "pipname": "psychopy-eyetracker-sr-research",
+    "name": "SR Research Eyetracker Support",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-eyetracker-sr-research.png",
+    "description": "Support for SR Research Eyelink eyetrackers using ioHub.",
+    "homepage": "https://github.com/psychopy/psychopy-eyetracker-sr-research",
+    "docs": "https://pages.github.com/psychopy/psychopy-eyetracker-sr-research",
+    "repo": "https://github.com/psychopy/psychopy-eyetracker-sr-research",
+    "keywords": [
+      "hardware",
+      "eyetracker",
+      "iohub"
+    ]
+  },
+  {
     "pipname": "psychopy-legacy",
     "name": "PsychoPy Legacy",
     "author": {
