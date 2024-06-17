@@ -45,7 +45,7 @@ If you need to use plugins on a machine that is not connected to the internet, f
             * Click on the `Tools` tab and select `Plugin/packages Manager`
             * Find the relevant plugin from the list 
 #. Download the wheel (.whl) file on a networked computer:
-            * Visit Pypi.org and search for your selected plugin using the search bar
+            * Visit `Pypi.org<Pypi.org>`_ and search for your selected plugin using the search bar
             * Download the wheel (.whl) file
 #. Transfer the wheel (.whl) file to an external storage device (e.g. a memory stick)
 #. Connect the external storage device to the non-networked computer 
