@@ -404,6 +404,23 @@
     ]
   },
   {
+    "pipname": "psychopy-eyetracker-eyelogic",
+    "name": "EyeLogic Eyetracker Support",
+    "author": {
+      "name": "EyeLogic GmbH",
+      "email": "info@eyelogicsolutions.com",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/eyelogic.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-eyelogic.png",
+    "description": "Support for EyeLogic eyetrackers using ioHub.",
+    "homepage": "https://www.eyelogicsolutions.com",
+    "keywords": [
+      "hardware",
+      "eyetracker",
+      "iohub"
+    ]
+  },
+  {
     "pipname": "psychopy-whisper",
     "name": "Whisper Speech-to-Text Transcription",
     "author": {
