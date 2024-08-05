@@ -222,6 +222,27 @@
     ]
   },
   {
+    "pipname": "psychopy-mri-emulator",
+    "name": "MRI Emulator",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-mri-emulator.png",
+    "description": "Software emulator for fMRI machines.",
+    "homepage": "https://psychopy.github.io/psychopy-mri-emulator/",
+    "docs": "https://psychopy.github.io/psychopy-mri-emulator/",
+    "repo": "https://github.com/psychopy/psychopy-mri-emulator/",
+    "keywords": [
+      "equipment",
+      "hardware",
+      "mri",
+      "emulation"
+    ]
+  },
+  {
     "pipname": "psychopy-qmix",
     "name": "Qmix Syringe Pump Support",
     "author": {
