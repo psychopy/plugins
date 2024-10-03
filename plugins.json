@@ -500,5 +500,26 @@
       "visual",
       "deprecated"
     ]
+  },
+  {
+    "pipname": "psychopy-monkeys",
+    "name": "PsychoPy Monkeys (Response Simulation)",
+    "author": {
+      "name": "Todd Parsons",
+      "email": "todd@opensciencetools.org",
+      "github": "TEParsons",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/TEParsons.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-monkeys.png",
+    "description": "Save time and effort by simulating participant responses when the run mode is 'Pilot'. Disclaimer: Does not involve actual monkeys.",
+    "homepage": "https://TEParsons.github.io/psychopy-monkeys",
+    "docs": "https://TEParsons.github.io/psychopy-monkeys",
+    "repo": "https://github.com/TEParsons/psychopy-monkeys",
+    "keywords": [
+      "convenience",
+      "response",
+      "simulation",
+      "piloting"
+    ]
   }
 ] 
