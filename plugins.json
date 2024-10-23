@@ -482,6 +482,25 @@
     ]
   },
   {
+    "pipname": "psychopy-eyelink",
+    "name": "SR Research Eyetracker Support",
+    "author": {
+      "name": "SR Research Ltd.",
+      "email": "support@sr-research.com",
+      "github": "",
+      "avatar": "https://gravatar.com/userimage/238764658/4f379bb3a13b3556b568acf526ce271b.jpeg"
+    },
+    "icon": "https://gravatar.com/userimage/238764658/4f379bb3a13b3556b568acf526ce271b.jpeg",
+    "description": "EyeLink Plugin for PsychoPy Builder from SR Research Ltd.",
+    "homepage": "https://pypi.org/project/psychopy-eyelink/",
+    "docs": "https://www.sr-research.com/support/",
+    "repo": "",
+    "keywords": [
+      "hardware",
+      "eyetracker"
+    ]
+  },
+  {
     "pipname": "psychopy-legacy",
     "name": "PsychoPy Legacy",
     "author": {
