@@ -538,6 +538,9 @@
       "convenience",
       "response",
       "simulation",
+      "simulator",
+      "emulation",
+      "emulator",
       "piloting"
     ]
   }
