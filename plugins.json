@@ -543,5 +543,28 @@
       "emulator",
       "piloting"
     ]
+  },
+  {
+    "pipname": "psychopy-face-api",
+    "name": "PsychoPy Face API",
+    "author": {
+      "name": "Open Science Tools",
+      "email": "dev@opensciencetools.org",
+      "github": "psychopy",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/OST.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-face-api.png",
+    "description": "Add support for Face API in PsychoPy experiments",
+    "homepage": "https://psychopy.github.io/psychopy-face-api",
+    "docs": "https://psychopy.github.io/psychopy-face-api",
+    "repo": "https://github.com/psychopy/psychopy-face-api",
+    "keywords": [
+      "face",
+      "faceapi",
+      "emotion",
+      "online",
+      "js",
+      "javascript"
+    ]
   }
 ] 
