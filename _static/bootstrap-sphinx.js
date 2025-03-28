@@ -89,7 +89,7 @@
     $(".bs-sidenav ul").addClass("nav nav-list");
     $(".bs-sidenav > ul > li > a").addClass("nav-header");
 
-    
+
     // back to top
     setTimeout(function () {
       var $sideBar = $(".bs-sidenav");
@@ -101,7 +101,7 @@
       }
 
     }, 0);
-    
+
 
     // Local TOC.
     patchToc($("ul.localtoc"), 2);
