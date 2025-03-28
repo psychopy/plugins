@@ -543,5 +543,22 @@
       "emulator",
       "piloting"
     ]
+  },
+  {
+    "pipname": "psychopy-bids",
+    "name": "PsychoPy BIDS",
+    "author": {
+      "name": "Lukas Wiertz",
+      "email": "lukas.wiertz@uni-graz.at"
+    },
+    "icon": "https://gitlab.com/psygraz/psychopy-bids/-/raw/main/images/orig_BIDS.png",
+    "description": "A PsychoPy plugin to work with the Brain Imaging Data Structure (BIDS) for creating valid BIDS datasets from PsychoPy experiments.",
+    "homepage": "https://psygraz.gitlab.io/psychopy-bids",
+    "docs": "https://psychopy-bids.readthedocs.io",
+    "repo": "https://gitlab.com/psygraz/psychopy-bids",
+    "keywords": [
+      "BIDS",
+      "brain imaging"
+    ]
   }
-] 
+]
