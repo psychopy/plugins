@@ -549,11 +549,13 @@
     "name": "PsychoPy BIDS",
     "author": {
       "name": "Lukas Wiertz",
-      "email": "lukas.wiertz@uni-graz.at"
+      "email": "lukas.wiertz@uni-graz.at",
+      "github": "wieluk",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/unknown.png"
     },
     "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-bids.png",
     "description": "A PsychoPy plugin for generating BIDS-compliant datasets from experiments.",
-    "homepage": "https://psygraz.gitlab.io/psychopy-bids",
+    "homepage": "https://gitlab.com/psygraz/psychopy-bids",
     "docs": "https://psychopy-bids.readthedocs.io",
     "repo": "https://gitlab.com/psygraz/psychopy-bids",
     "keywords": [
