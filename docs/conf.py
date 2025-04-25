@@ -15,7 +15,7 @@ import os
 import sys
 import pathlib
 
-docs_folder = pathlib.Path(__file__).parent.parent
+docs_folder = pathlib.Path(__file__).parent
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -23,7 +23,9 @@ docs_folder = pathlib.Path(__file__).parent.parent
 # sys.path.append(os.path.abspath('.'))
 
 # -- General configuration -----------------------------------------------------
-
+# Add custom extensions folder to the path
+extensions_folder = docs_folder / "extensions"
+sys.path.append(str(extensions_folder.resolve()))
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['sphinx.ext.autodoc',
@@ -33,7 +35,9 @@ extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.mathjax',
               'sphinx.ext.napoleon',
               'sphinx.ext.intersphinx',
-              'sphinx.ext.viewcode']
+              'sphinx.ext.viewcode',
+              'plugin_array',
+              'sphinx_design']
 
 autoclass_content = 'both'
 autosummary_generate = True
@@ -126,9 +130,14 @@ napoleon_include_special_with_doc = False
 
 # The theme to use for HTML and HTML Help pages.  Major themes that come with
 # Sphinx are currently 'default' and 'sphinxdoc'.
-html_theme_path = ["themes"]
-html_theme = 'psychopy_plugin'
-
+html_theme = 'psychopy'
+html_theme_options = {
+    'variant': "plugin_dir",
+    'navbar_links': {
+        'About': "basics",
+        'Developers': "dev"
+    }
+}
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
