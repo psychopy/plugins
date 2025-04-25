@@ -29,7 +29,5 @@ function filterPlugins(event) {
         card.parentElement.classList.remove("plugin-card-hidden");
         card.parentElement.classList.remove("plugin-card-shown");
         card.parentElement.classList.add(hidden ? "plugin-card-hidden" : "plugin-card-shown");
-
-        console.log(card, hidden)
     }
 }
