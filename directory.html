@@ -181,286 +181,427 @@
   
   <section id="psychopy-plugins-directory">
 <h1>PsychoPy Plugins Directory<a class="headerlink" href="#psychopy-plugins-directory" title="Link to this heading">¶</a></h1>
-<p>The following plugins are currently available:</p>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="plugin-search-container"><script type='text/javascript' language='javascript'>
+function filterPlugins(event) {
+    // get grid element (should be next element)
+    let grid = event.parentElement.nextElementSibling
+    // get search term
+    let term = event.value.toLowerCase()
+    // iterate through cards
+    for (let card of grid.getElementsByClassName("plugin-card")) {
+        // get subelements
+        let title = card.getElementsByClassName("plugin-card-title")[0];
+        let body = card.getElementsByClassName("plugin-card-body")[0];
+        let tags = card.getElementsByClassName("plugin-card-tags")[0];
+        // start off assuming hidden
+        let hidden = true;
+        // show if search is blank
+        if (term === "") {
+            hidden = false;
+        }
+        // show if search matches a tag
+        for (let tag of tags.getElementsByClassName("sd-badge")) {
+            if (tag.textContent.toLowerCase().includes(term)) {
+                hidden = false;
+            }
+        }
+        // show if search is in title
+        if (title.textContent.toLowerCase().includes(term)) {
+            hidden = false;
+        }
+        // show/hide card
+        card.parentElement.classList.remove("plugin-card-hidden");
+        card.parentElement.classList.remove("plugin-card-shown");
+        card.parentElement.classList.add(hidden ? "plugin-card-hidden" : "plugin-card-shown");
+
+        console.log(card, hidden)
+    }
+}
+</script>
+<style>
+.plugin-search-container {
+    position: relative;
+    width: calc(100% - var(--sd-gutter-x, 0.75rem) * 2);
+    margin: var(--sd-gutter-y, 0.75rem) var(--sd-gutter-x, 0.75rem);
+}
+
+.plugin-search-ctrl {
+    width: 100%;
+    border: 1px solid var(--sd-color-card-border);
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+}
+.plugin-search-ctrl:focus {
+    outline: 2px solid var(--sd-color-card-border-hover);
+}
+
+.plugin-card-hidden {
+    display: none !important;
+}
+</style>
+<input type=search placeholder='Search plugins...' onsearch='filterPlugins(this)' class=plugin-search-ctrl /></div><div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-2 sd-row-cols-md-3 sd-row-cols-lg-4 sd-g-4 sd-g-xs-4 sd-g-sm-4 sd-g-md-4 sd-g-lg-4 docutils">
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-crs.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 Cambridge Research Systems devices [<code class="docutils literal notranslate"><span class="pre">psychopy-crs</span></code>]</div>
 <p class="sd-card-text">Support for various hardware devices by Cambridge Research Systems Ltd.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">crs</span>  <span class="sd-sphinx-override sd-badge">equipment</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-crs/"><span>https://psychopy.github.io/psychopy-crs/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-cedrus.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 Cedrus Support [<code class="docutils literal notranslate"><span class="pre">psychopy-cedrus</span></code>]</div>
 <p class="sd-card-text">Support for various hardware devices by the Cedrus Corporation.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">equipment</span>  <span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">buttonbox</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-cedrus/"><span>https://psychopy.github.io/psychopy-cedrus/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-vpixx.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 PsychoPy VPixx [<code class="docutils literal notranslate"><span class="pre">psychopy-pixx</span></code>]</div>
 <p class="sd-card-text">PsychoPy extensions for high-luminance resolution using VPixx Technology Inc devices.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">buttonbox</span>  <span class="sd-sphinx-override sd-badge">input</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://github.com/wichmann-lab/psychopy-pixx"><span>https://github.com/wichmann-lab/psychopy-pixx</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-bbtk.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 Black Box Toolkit Support [<code class="docutils literal notranslate"><span class="pre">psychopy-bbtk</span></code>]</div>
 <p class="sd-card-text">Extension package for adding support for devices by Black Box ToolKit Ltd. to PsychoPy.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">equipment</span>  <span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">buttonbox</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-bbtk/"><span>https://psychopy.github.io/psychopy-bbtk/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-labhackers.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 LabHackers Research Equipment Support [<code class="docutils literal notranslate"><span class="pre">psychopy-labhackers</span></code>]</div>
 <p class="sd-card-text">Extension package for adding support for devices by LabHackers Research Equipment to PsychoPy.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">equipment</span>  <span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">buttonbox</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-labhackers/"><span>https://psychopy.github.io/psychopy-labhackers/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-iolabs.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 ioLabs Systems Button Box Support [<code class="docutils literal notranslate"><span class="pre">psychopy-iolabs</span></code>]</div>
 <p class="sd-card-text">Extension package for adding support for ioLabs Systems button boxes to PsychoPy.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">equipment</span>  <span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">buttonbox</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-iolabs/"><span>https://psychopy.github.io/psychopy-iolabs/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-brainproducts.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 Brain Products GmbH Device Support [<code class="docutils literal notranslate"><span class="pre">psychopy-brainproducts</span></code>]</div>
 <p class="sd-card-text">Extension package for PsychoPy which adds support for Brain Products GmbH devices.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">equipment</span>  <span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">buttonbox</span>  <span class="sd-sphinx-override sd-badge">eeg</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-brainproducts/"><span>https://psychopy.github.io/psychopy-brainproducts/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-gammasci.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 Gamma Scientific Inc. Support [<code class="docutils literal notranslate"><span class="pre">psychopy-gammasci</span></code>]</div>
 <p class="sd-card-text">Extension package for PsychoPy which adds support for Gamma Scientific Inc. devices.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">equipment</span>  <span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">optometer</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-gammasci/"><span>https://psychopy.github.io/psychopy-gammasci/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-photoresearch.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 Photo Research Inc. Support [<code class="docutils literal notranslate"><span class="pre">psychopy-photoresearch</span></code>]</div>
 <p class="sd-card-text">Extension package for PsychoPy which adds support for Photo Research Inc. devices.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">equipment</span>  <span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">photometer</span>  <span class="sd-sphinx-override sd-badge">colorimeter</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-photoresearch/"><span>https://psychopy.github.io/psychopy-photoresearch/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-labjack.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 LabJack Support [<code class="docutils literal notranslate"><span class="pre">psychopy-labjack</span></code>]</div>
 <p class="sd-card-text">Extension package for adding support for LabJack devices to PsychoPy.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">equipment</span>  <span class="sd-sphinx-override sd-badge">hardware</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-labjack/"><span>https://psychopy.github.io/psychopy-labjack/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-minolta.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 Konica Minolta Support [<code class="docutils literal notranslate"><span class="pre">psychopy-minolta</span></code>]</div>
 <p class="sd-card-text">Extension package for adding support for Konica Minolta light-measuring devices to PsychoPy.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">equipment</span>  <span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">minolta</span>  <span class="sd-sphinx-override sd-badge">photometer</span>  <span class="sd-sphinx-override sd-badge">colorimeter</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-minolta/"><span>https://psychopy.github.io/psychopy-minolta/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-mri-emulator.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 MRI Emulator [<code class="docutils literal notranslate"><span class="pre">psychopy-mri-emulator</span></code>]</div>
 <p class="sd-card-text">Software emulator for fMRI machines.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">equipment</span>  <span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">mri</span>  <span class="sd-sphinx-override sd-badge">emulation</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-mri-emulator/"><span>https://psychopy.github.io/psychopy-mri-emulator/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-qmix.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 Qmix Syringe Pump Support [<code class="docutils literal notranslate"><span class="pre">psychopy-qmix</span></code>]</div>
 <p class="sd-card-text">Simple interface to the Cetoni neMESYS syringe pump system.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">equipment</span>  <span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">pump</span>  <span class="sd-sphinx-override sd-badge">syringe</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-qmix/"><span>https://psychopy.github.io/psychopy-qmix/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-labeotech.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 LabeoTech device support [<code class="docutils literal notranslate"><span class="pre">psychopy-labeotech</span></code>]</div>
 <p class="sd-card-text">Support for LabeoTech devices such as pump systems for mice.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">equipment</span>  <span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">pump</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-labeotech/"><span>https://psychopy.github.io/psychopy-labeotech/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-sounddevice.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 Audio playback support using the SoundDevice library [<code class="docutils literal notranslate"><span class="pre">psychopy-sounddevice</span></code>]</div>
 <p class="sd-card-text">Audio playback backend using the SoundDevice library.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">equipment</span>  <span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">sound</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-sounddevice/"><span>https://psychopy.github.io/psychopy-sounddevice/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-pyo.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 Audio playback support using the Pyo library [<code class="docutils literal notranslate"><span class="pre">psychopy-pyo</span></code>]</div>
 <p class="sd-card-text">Audio playback backend using the Pyo library.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">equipment</span>  <span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">sound</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-pyo/"><span>https://psychopy.github.io/psychopy-pyo/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-emotiv.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 Emotiv EEG [<code class="docutils literal notranslate"><span class="pre">psychopy-emotiv</span></code>]</div>
 <p class="sd-card-text">Support for various hardware devices by Emotiv Inc.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">emotiv</span>  <span class="sd-sphinx-override sd-badge">eeg</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-emotiv/"><span>https://psychopy.github.io/psychopy-emotiv/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-visionscience.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 Advanced Vision Science [<code class="docutils literal notranslate"><span class="pre">psychopy-visionscience</span></code>]</div>
 <p class="sd-card-text">Adds advanced vision science stimuli such; noise patches and second-order gratings with envelope.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">vision</span>  <span class="sd-sphinx-override sd-badge">science</span>  <span class="sd-sphinx-override sd-badge">grating</span>  <span class="sd-sphinx-override sd-badge">noise</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-visionscience/"><span>https://psychopy.github.io/psychopy-visionscience/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-tobii.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 Tobii Eyetracker Support [<code class="docutils literal notranslate"><span class="pre">psychopy-eyetracker-tobii</span></code>]</div>
 <p class="sd-card-text">Support for Tobii eyetrackers using ioHub.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">tobii</span>  <span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">eyetracker</span>  <span class="sd-sphinx-override sd-badge">iohub</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://github.com/psychopy/psychopy-eyetracker-tobii"><span>https://github.com/psychopy/psychopy-eyetracker-tobii</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-eyetracker-pupil-labs.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 Pupil Labs Eyetracker Support [<code class="docutils literal notranslate"><span class="pre">psychopy-eyetracker-pupil-labs</span></code>]</div>
 <p class="sd-card-text">Support for Pupil Labs eyetrackers using ioHub.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">eyetracker</span>  <span class="sd-sphinx-override sd-badge">iohub</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://github.com/psychopy/psychopy-eyetracker-pupil-labs"><span>https://github.com/psychopy/psychopy-eyetracker-pupil-labs</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-eyetracker-gazepoint.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 Gazepoint Eyetracker Support [<code class="docutils literal notranslate"><span class="pre">psychopy-eyetracker-gazepoint</span></code>]</div>
 <p class="sd-card-text">Support for Gazepoint eyetrackers using ioHub.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">eyetracker</span>  <span class="sd-sphinx-override sd-badge">iohub</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://github.com/psychopy/psychopy-eyetracker-gazepoint"><span>https://github.com/psychopy/psychopy-eyetracker-gazepoint</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-eyelogic.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 EyeLogic Eyetracker Support [<code class="docutils literal notranslate"><span class="pre">psychopy-eyetracker-eyelogic</span></code>]</div>
 <p class="sd-card-text">Support for EyeLogic eyetrackers using ioHub.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">eyetracker</span>  <span class="sd-sphinx-override sd-badge">iohub</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://www.eyelogicsolutions.com"><span>https://www.eyelogicsolutions.com</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-transcribe-whispr.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 Whisper Speech-to-Text Transcription [<code class="docutils literal notranslate"><span class="pre">psychopy-whisper</span></code>]</div>
 <p class="sd-card-text">Support for transcribing speech in audio using OpenAI Whisper.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">sound</span>  <span class="sd-sphinx-override sd-badge">transcription</span>  <span class="sd-sphinx-override sd-badge">speech</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://github.com/psychopy/psychopy-whisper"><span>https://github.com/psychopy/psychopy-whisper</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-eyetracker-sr-research.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 SR Research Eyetracker Support [<code class="docutils literal notranslate"><span class="pre">psychopy-eyetracker-sr-research</span></code>]</div>
 <p class="sd-card-text">Support for SR Research Eyelink eyetrackers using ioHub.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">eyetracker</span>  <span class="sd-sphinx-override sd-badge">iohub</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://github.com/psychopy/psychopy-eyetracker-sr-research"><span>https://github.com/psychopy/psychopy-eyetracker-sr-research</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://gravatar.com/userimage/238764658/4f379bb3a13b3556b568acf526ce271b.jpeg" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 SR Research Eyetracker Support [<code class="docutils literal notranslate"><span class="pre">psychopy-eyelink</span></code>]</div>
 <p class="sd-card-text">EyeLink Plugin for PsychoPy Builder from SR Research Ltd.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">hardware</span>  <span class="sd-sphinx-override sd-badge">eyetracker</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://pypi.org/project/psychopy-eyelink/"><span>https://pypi.org/project/psychopy-eyelink/</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-legacy.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 PsychoPy Legacy [<code class="docutils literal notranslate"><span class="pre">psychopy-legacy</span></code>]</div>
 <p class="sd-card-text">Legacy stimuli and Components for PsychoPy</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">legacy</span>  <span class="sd-sphinx-override sd-badge">visual</span>  <span class="sd-sphinx-override sd-badge">deprecated</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://psychopy.github.io/psychopy-legacy"><span>https://psychopy.github.io/psychopy-legacy</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-monkeys.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 PsychoPy Monkeys (Response Simulation) [<code class="docutils literal notranslate"><span class="pre">psychopy-monkeys</span></code>]</div>
 <p class="sd-card-text">Save time and effort by simulating participant responses when the run mode is ‘Pilot’. Disclaimer: Does not involve actual monkeys.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">convenience</span>  <span class="sd-sphinx-override sd-badge">response</span>  <span class="sd-sphinx-override sd-badge">simulation</span>  <span class="sd-sphinx-override sd-badge">simulator</span>  <span class="sd-sphinx-override sd-badge">emulation</span>  <span class="sd-sphinx-override sd-badge">emulator</span>  <span class="sd-sphinx-override sd-badge">piloting</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://TEParsons.github.io/psychopy-monkeys"><span>https://TEParsons.github.io/psychopy-monkeys</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover plugin-card docutils">
 <img alt="" class="sd-card-img-top" src="https://plugins.psychopy.org/_static/plugin-icons/psychopy-bids.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
+<div class="sd-card-body plugin-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold plugin-card-title docutils">
 PsychoPy BIDS [<code class="docutils literal notranslate"><span class="pre">psychopy-bids</span></code>]</div>
 <p class="sd-card-text">A PsychoPy plugin for generating BIDS-compliant datasets from experiments.</p>
+</div>
+<div class="sd-card-footer plugin-card-tags docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge">BIDS</span>  <span class="sd-sphinx-override sd-badge">brain imaging</span></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://gitlab.com/psygraz/psychopy-bids"><span>https://gitlab.com/psygraz/psychopy-bids</span></a></div>
 </div>
