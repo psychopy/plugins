@@ -1,8 +1,6 @@
 PsychoPy Plugins Directory
 =====================================
 
-The following plugins are currently available:
-
 .. plugin-grid:: 1 2 3 4
     :gutter: 4
     
