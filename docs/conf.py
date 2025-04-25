@@ -132,9 +132,10 @@ napoleon_include_special_with_doc = False
 # Sphinx are currently 'default' and 'sphinxdoc'.
 html_theme = 'psychopy'
 html_theme_options = {
-    'plugin': False,
+    'variant': "plugin_dir",
     'navbar_links': {
-        'psychopy.org': "https://psychopy.org"
+        'About': "basics",
+        'Developers': "dev"
     }
 }
 # Theme options are theme-specific and customize the look and feel of a theme
