@@ -7,10 +7,12 @@
 
     <title>PsychoPy Plugins &#8212; PsychoPy Plugins v0.0.1</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=536c50fe" />
-    <link rel="stylesheet" type="text/css" href="_static/psychopy.css?v=b9f4e6dd" />
+    <link rel="stylesheet" type="text/css" href="_static/psychopy.css?v=61c18825" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <script src="_static/documentation_options.js?v=d20be8f5"></script>
     <script src="_static/doctools.js?v=b682be12"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script src="_static/js/jquery-1.11.0.min.js"></script>
     <script src="_static/js/jquery-fix.js"></script>
     <script src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
@@ -24,15 +26,51 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
     <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4089651-2"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-96LHQFPY1F"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-4089651-2');
+      gtag('config', 'G-96LHQFPY1F');
     </script>
+
+    <!-- News reel -->
+     <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // get all news reels
+        for (let reel of document.getElementsByClassName("news-reel")) {
+          // get all cards
+          let cards = Array.from(reel.getElementsByClassName("sd-card"))
+          // start off with the first card
+          reel.showItem = 0;
+          // define function to show the next node
+          let update = () => {
+            for (let item of cards) {
+              // get index
+              let index = cards.indexOf(item);
+              // show/hide according to index match
+              if (index === reel.showItem) {
+                console.log("Showing news item:", item)
+                item.style.display = "block";
+              } else {
+                item.style.display = "none";
+              }
+            }
+            // iterate shown index
+            reel.showItem += 1;
+            if (reel.showItem >= cards.length) {
+              reel.showItem -= cards.length;
+            }
+          }
+          // run once now
+          update()
+          // schedule to run every 5s
+          window.setInterval(update, 5000);
+        }
+      }, false);    
+     </script>
 
     <!-- Matomo -->
     <script>
@@ -56,13 +94,8 @@
 
 
   </head><body>
-
-<!-- The social media icon bar -->
-<div class="social-bar">
-  <a href="" class="github">
-    <i class="fab fa-github"></i></a>
-</div>
-
+  
+    <!-- nav bar -->
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -73,91 +106,77 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand small-logo" href="https://plugins.psychopy.org">
-          <img src="_static/Psychopy Plugin Header Small.png" alt="PsychoPy Logo">
+        <a class="navbar-brand small-logo" href="#">
+          
+          <img src="_static/navbar_logo_plugin_dir_small.png" alt="PsychoPy Logo">
+          
         </a>
-        <a class="navbar-brand large-logo" href="https://plugins.psychopy.org">
-          <img src="_static/Psychopy Plugin Header Large.png" alt="PsychoPy Logo">
+        <a class="navbar-brand large-logo" href="#">
+          
+          <img src="_static/navbar_logo_plugin_dir_large.png" alt="PsychoPy Logo">
+          
         </a>
         <!-- <span class="navbar-text navbar-version pull-right"><b>0.0</b></span> -->
       </div>
 
-        <div class="collapse navbar-collapse nav-collapse w-100 pull-right">
-          <ul class="nav navbar-nav ml-auto">
-            <li><a href="#">Home</a></li>
-            <li><a href="https://psychopy.org" class="return-btn">psychopy.org</a></li>
+      <div class="collapse navbar-collapse nav-collapse w-100 pull-right">
+        <ul class="nav navbar-nav ml-auto">
+          
+          
             
+<!-- insert a regular link -->
+<li>
+    <a href="basics.html">
+        About
+    </a>
+</li>
+
+
+          
+          
+          
             
-              <!-- <li class="dropdown globaltoc-container">
-  <a role="button"
-     id="dLabelGlobalToc"
-     data-toggle="dropdown"
-     data-target="#"
-     href="#">Documentation <b class="caret"></b></a>
-  <ul class="dropdown-menu globaltoc"
-      role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="basics.html">About PsychoPy Plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="directory.html">PsychoPy Plugins Directory</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="dev.html">PsychoPy Plugins</a></li>
-</ul>
-</ul>
-</li> -->
-              
-            
-            <!--  -->
-            
-            
+<!-- insert a regular link -->
+<li>
+    <a href="dev.html">
+        Developers
+    </a>
+</li>
+
+
+          
+          
+          
+          <li><a href="https://psychopy.org/" class="return-btn">psychopy.org</a></li>
+          
           </ul>
-
-            <!-- 
-              
-<form class="navbar-form navbar-right" action="search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
-             -->
-
         </div>
     </div>
   </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-3">
-      <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
-<li><a class="reference internal" href="#">PsychoPy Plugins</a><ul>
-<li><a class="reference internal" href="#for-users">For users</a></li>
-<li><a class="reference internal" href="#for-developers">For developers</a></li>
-<li><a class="reference internal" href="#indices">Indices</a></li>
-</ul>
-</li>
-</ul>
+<!--
 
-  <li>
-    <a href="basics.html" title="Next Chapter: About PsychoPy Plugins"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">About PsychoP... &raquo;</span>
-    </a>
-  </li>
-<div id="sourcelink">
-  <a href="https://github.com/psychopy/psychopy/blob/master/docs/source/index.rst"
-     rel="nofollow">Source</a>
+   -->
+
+<!-- social media icon bar -->
+<div class="social-bar">
+<a href="https://github.com/psychopy/psychopy" class="github">
+    <i class="fab fa-github"></i></a>
+<a href="https://bsky.app/profile/psychopy.org" class="bluesky">
+    <i class="fab fa-bluesky"></i></a>
+<a href="https://www.youtube.com/watch?v=VV6qhuQgsiI&list=PLFB5A1BE51964D587" class="youtube">
+    <i class="fab fa-youtube"></i></a>
+<a href="https://www.facebook.com/PsychoPy/" class="facebook">
+    <i class="fab fa-facebook"></i></a>
+    <a href="https://www.linkedin.com/company/open-science-tools" class="linkedin">
+    <i class="fab fa-linkedin"></i></a>
+    <a href="https://twitter.com/psychopy" class="twitter">
+    <i class="fab fa-x-twitter"></i></a>
 </div>
-<form action="search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
-      </div>
-    </div>
-    <div class="col-md-9 content">
-      
+  
+
+<main>
+  
   <section id="psychopy-plugins">
 <h1>PsychoPy Plugins<a class="headerlink" href="#psychopy-plugins" title="Link to this heading">¶</a></h1>
 <section id="for-users">
@@ -187,10 +206,9 @@
 </section>
 
 
-      <br/><a href="#" class="pull-right">Back to top</a>
-    </div>
-      
-  </div>
+</div>
+<div class="col-md-12 content">
+  <br/><a href="#" class="pull-right">Back to top</a>
 </div>
 <footer class="footer">
   <div class="container">
@@ -206,11 +224,11 @@
           &copy; 2002-2018 <a href="https://www.peirce.org.uk/">Jonathan Peirce</a><br/>
           &copy; 2019 <a href="https://opensciencetools.org/">Open Science Tools Ltd.</a><br/><br/>
         PsychoPy<sup>®</sup> and Pavlovia<sup>®</sup> are registered trademarks of Open Science Tools Ltd.<br/>
-        Last updated on Mar 28, 2025.<br/>
+        Last updated on Apr 25, 2025.<br/>
         Created using <a href="http://sphinx-doc.org/">Sphinx</a> 8.2.3.<br/><br/>
     </span>
 
-    <a href="http://www.nottingham.ac.uk/"><img src="_static/Nottingham Supported.png", alt="Uni of Nottingham" width=250></a>
+    <a href="http://www.nottingham.ac.uk/"><img src="_static/UoN_Supported_RGB.png", alt="Uni of Nottingham" width=200></a>
   </div>
 
 </footer>
