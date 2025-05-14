@@ -1,0 +1,19 @@
+.plugin-search-container {
+    position: relative;
+    width: calc(100% - var(--sd-gutter-x, 0.75rem) * 2);
+    margin: var(--sd-gutter-y, 0.75rem) var(--sd-gutter-x, 0.75rem);
+}
+
+.plugin-search-ctrl {
+    width: 100%;
+    border: 1px solid var(--sd-color-card-border);
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+}
+.plugin-search-ctrl:focus {
+    outline: 2px solid var(--sd-color-card-border-hover);
+}
+
+.plugin-card-hidden {
+    display: none !important;
+}
