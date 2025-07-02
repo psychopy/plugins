@@ -37,7 +37,10 @@ extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.intersphinx',
               'sphinx.ext.viewcode',
               'plugin_array',
-              'sphinx_design']
+              'sphinx_design',
+              'sphinx.ext.githubpages']
+
+html_baseurl = 'https://plugins.psychopy.org'
 
 autoclass_content = 'both'
 autosummary_generate = True
