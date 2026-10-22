@@ -585,5 +585,25 @@
       "BIDS",
       "brain imaging"
     ]
+  },
+  {
+    "pipname": "psychopy-pest",
+    "name": "PEST Staircase",
+    "author": {
+      "name": "Zhenxian Li",
+      "github": "ZhenxianLi",
+      "avatar": "https://plugins.psychopy.org/_static/plugin-icons/authors/ZhenxianLi.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-pest.png",
+    "description": "Adds the PEST adaptive staircase (Taylor & Creelman, 1967) as psychopy.data.PestHandler, alongside StairHandler and QuestHandler.",
+    "homepage": "https://github.com/ZhenxianLi/PEST_Toolbox/tree/main/python",
+    "docs": "https://github.com/ZhenxianLi/PEST_Toolbox/blob/main/python/README.md",
+    "repo": "https://github.com/ZhenxianLi/PEST_Toolbox",
+    "keywords": [
+      "staircase",
+      "psychophysics",
+      "threshold",
+      "adaptive"
+    ]
   }
 ]
