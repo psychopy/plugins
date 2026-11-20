@@ -237,22 +237,17 @@ blockquote {
 }
 
 /* logos (big and small) in top left */
-.large-logo img {
-    position: absolute;
-    /*top: -84px;*/
-    top: 5px;
-    left: 10px;
-    width: auto;
-    max-width: none;
-    height: 120px;
+.navbar-brand {
+    padding: .5rem;
+    box-sizing: border-box;
 }
 
-.small-logo img {
-    display: none;
-    width: auto;
-    height: 60px;
-    max-width: none;
-    top: 5px;
+.navbar-brand img {
+    height: 100%;
+}
+
+.navbar-toggle {
+    align-self: start;
 }
 
 /* Logo with straplines in center of landing page */
@@ -535,14 +530,6 @@ a:hover,
         justify-content: center;
     }
 
-    .large-logo {
-        display: none;
-    }
-
-    .small-logo img {
-        display: block;
-    }
-
     .social-bar {
         display: none;
     }  
@@ -602,6 +589,18 @@ a:hover,
   font-size: 16px;
 }
 
+div.admonition {
+    padding: 1rem;
+}
+
+.alert-info {
+    background-color: var(--mantle);
+    border: none;
+    border-left: .25rem solid var(--orange);
+    color: var(--text);
+    border-radius: 0;
+}
+
 .fade {
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
@@ -617,4 +616,20 @@ a:hover,
   opacity: 1;
 }
 
+abbr, abbr[title], abbr[data-original-title] {
+    border: none;
+    text-decoration: none;
+    background-color: var(--mantle);
+    border-radius: .5em;
+    padding: 0 .5em;
+}
+.sd-card-title {
+    font-size: 1.2em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid var(--overlay);
+}
 
+.sd-card-footer.recommended {
+    background-color: var(--green);
+    color: var(--base);
+}
