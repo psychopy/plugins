@@ -567,7 +567,7 @@
       "javascript"
       ]
     }, 
-    {
+  {
     "pipname": "psychopy-bids",
     "name": "PsychoPy BIDS",
     "author": {
@@ -584,6 +584,28 @@
     "keywords": [
       "BIDS",
       "brain imaging"
+    ]
+  },
+  {
+    "pipname": "psychopy-egi-pynetstation",
+    "name": "EGI NetStation Support",
+    "author": {
+      "name": "Peter J. Molfese, NIH CMN",
+      "email": "peter.molfese@nih.gov",
+      "github": "pmolfese",
+      "avatar": "https://github.com/pmolfese.png"
+    },
+    "icon": "https://plugins.psychopy.org/_static/plugin-icons/psychopy-egi-pynetstation.png",
+    "description": "Builder Components and a PsychoPy hardware interface for EGI/Magstim NetStation recording control and event markers.",
+    "homepage": "https://github.com/pmolfese/psychopy-egi-pynetstation",
+    "docs": "https://psychopy-egi-pynetstation.readthedocs.io/",
+    "repo": "https://github.com/pmolfese/psychopy-egi-pynetstation",
+    "keywords": [
+      "equipment",
+      "hardware",
+      "eeg",
+      "egi",
+      "netstation"
     ]
   }
 ]
